@@ -1,10 +1,4 @@
 # how to install 
-npm i
-
-# how to test
-npm run cy:open
-
-# how to install 
 
 - install packages first
 ```

@@ -1,0 +1,7 @@
+{
+    "Backlog": 0,
+    "To Do": 1,
+    "In Progress": 2,
+    "In Review": 3,
+    "Done": 4
+}

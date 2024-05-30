@@ -18,3 +18,9 @@ npm i
 # how to test
 npm run cy:open
 
+# how to report with video (in cypress/videos/)
+```
+npm run cy:run
+```
+
+

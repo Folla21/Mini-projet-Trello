@@ -23,6 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import '@4tw/cypress-drag-drop'
 
 Cypress.Commands.add("login", (name) => {
   cy.session(name, () => {

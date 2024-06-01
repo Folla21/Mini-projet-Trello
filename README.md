@@ -7,7 +7,7 @@ npm i
 
 - create your account in (trello)[https://trello.com/]
 
-- create a file called in cypress/fixtures/user.json with your email and password
+- create a file user in cypress/fixtures/user.json with your email and password
 ```
 {
     "email": "jean.porte@gmail.com",

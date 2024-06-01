@@ -23,7 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-import '@4tw/cypress-drag-drop'
+import "@4tw/cypress-drag-drop";
 
 Cypress.Commands.add("login", (name) => {
   cy.session(name, () => {
@@ -80,7 +80,7 @@ Cypress.Commands.add("fillCard", (myCy, { description }) => {
 
   // Save text
   myCy.get('[data-testid="editor-save-button"]').click();
-  myCy.wait(666);
+  myCy.wait(700);
 });
 
 Cypress.Commands.add("addCard", ({ title, description }, column) => {
@@ -100,13 +100,14 @@ Cypress.Commands.add("addCard", ({ title, description }, column) => {
     .last()
     .type(title);
   cy.get("body").click();
-  cy.wait(444);
+  cy.wait(500);
 
   // Enter card
   const card = currentColumn.get('[data-testid="card-name"]').last();
-  cy.wait(4100);
+  cy.wait(5000);
   card.click({ force: true });
 
+  // Write inside card
   cy.fillCard(card, { description });
 
   cy.log("Closing the card");
